@@ -49,72 +49,51 @@ if q1 == "y":
                 print("'Come back when you're stronger, kid.'")
                 break  # Exit loop
 
-    q3 = input("Wow you failed badly kid do you want to continue? (Y/N) ")
-    if q3 == "y":
-        print("Alright let's go")
+
+                break  # End the loop since the player won
+    
+    # Stealing Path 🤑💰 
+    if q2 == "2":
+        print("\nAlright let's go")
         print("\nYou sneak towards the Marine base at night... 🌙")
         print("The treasure is locked away inside, but guards are patrolling everywhere!")
-        
-        stealth_level = 3  # If this reaches 0, the player gets caught
 
-        while stealth_level > 0:
-            print("\nYou approach a hallway with a guard. What do you do?")
-            print("1️⃣ Hide behind a barrel 🛢️")
-            print("2️⃣ Sneak past quietly 🕶️")
-            print("3️⃣ Knock out the guard 🥊")
+        print("\nYou approach a hallway with a guard. What do you do?")
+        print("1️⃣ Hide behind a barrel 🛢️")
+        print("2️⃣ Sneak past quietly 🕶️")
+        print("3️⃣ Knock out the guard 🥊")
 
-            choice = input("Choose an action (1/2/3): ")
+        choice = input("Choose an action (1/2/3): ")
 
-            if choice == "1":
-                success = random.randint(1, 10)  # Random chance to stay hidden
-                if success > 3:
-                    print("You hold your breath... The guard walks past. 😰✅")
-                else:
-                    print("The guard hears something and looks around suspiciously... You barely escape! 😨❌")
-                    stealth_level -= 1
+        if choice == "1":
+            print("You hold your breath... The guard walks past. 😰✅")
 
-            elif choice == "2":
-                success = random.randint(1, 10)  # Random chance to sneak successfully
-                if success > 5:
-                    print("You move like a shadow... No one notices you. 😎✅")
-                else:
-                    print("Your footstep echoes too loudly! The guard turns around. 🚨❌")
-                    stealth_level -= 1
+        elif choice == "2":
+            print("You move like a shadow... No one notices you. 😎✅")
 
-            elif choice == "3":
-                fight_result = random.randint(1, 10)  # Random chance to win
-                if fight_result > 4:
-                    print("You knock out the guard silently. Nice work! 💪✅")
-                else:
-                    print("The guard dodges and calls for backup! 🚨❌")
-                    stealth_level -= 2  # Fighting is risky!
+        elif choice == "3":
+            print("You knock out the guard silently. Nice work! 💪✅")
 
-            else:
-                print("You freeze in place... The guard spots you! 🚨❌")
-                stealth_level -= 1
+        else:
+            print("You freeze in place... The guard spots you! 🚨❌")
+            print("\nYou're surrounded by Marines! You're thrown in jail. 🚔💀")
+            print("'Better luck next time, rookie.\n'")
+            quit()
 
-            # Check if the player got caught
-            if stealth_level <= 0:
-                print("\nYou're surrounded by Marines! You're thrown in jail. 🚔💀")
-                print("'Better luck next time, rookie.'")
-                quit()
-
-            # If the player succeeds multiple times, they get the treasure!
-            if stealth_level > 0 and random.randint(1, 5) == 1:
-                print("\nYou finally reach the treasure chest... 💰🏴‍☠️")
-                print("You grab the loot and escape into the night! 🎉")
-                print("'You might find the One Piece one day after all.'")
-                break  # End the loop since the player won
-
+        print("\nYou finally reach the treasure chest... 💰🏴‍☠️")
+        print("You grab the loot and escape into the night! 🎉")
+        print("'You might find the One Piece one day after all.'")
+    elif q2 == "n":
+        quit()
     else:
         print("You hesitated... Looks like you're not ready yet.")
-elif q3 == "n":
-    quit()
 
-    
+
 elif q1 == "n":
     print("Oh, well see you later kid.")
     quit()
 
 else:
     print("What?")
+
+print("Next Day☀️")
