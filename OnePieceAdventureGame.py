@@ -2,7 +2,7 @@
 # ------------------------------
 # This is a fan-made project inspired by Eiichiro Oda's One Piece.
 # I do not own One Piece, its characters, story, or any related assets.
-# All rights belong to their respective owners (Shueisha, Toei Animation).
+# All rights belong to their respective owners.
 # This game is made purely for fun and educational purposes.
 # No copyright infringement intended.
 
@@ -20,12 +20,12 @@ if q1 == "y":
     if q2 == "1":
         print("You head to the swordmaster's dojo. He looks at you and says, 'Show me what you've got!'")
         print("You grab a wooden sword and prepare to fight...")
-        # You can continue the battle sequence here!
         
     elif q2 == "2":
-        print("You sneak into the Marine base at night, your heart pounding...")
-        print("One wrong move and you'll be caught!")
-        # Add stealth mechanics or choices here!
+        print("Alright kid, get ready because the adventure has just begun...")
+        print("Would you like to contine.")
+        print("You sneak into the Marine base at night, your heart pounding.")
+        print("One wrong move and you'll be caught!...")
 
     else:
         print("You hesitated... Looks like you're not ready yet.")
