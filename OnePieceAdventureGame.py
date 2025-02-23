@@ -69,10 +69,10 @@ if q1 == "y":
             print("You hold your breath... The guard walks past. 😰✅")
 
         elif choice == "2":
-            print("You move like a shadow... No one notices you. 😎✅")
+            print("You lose control and knock down some barrels, \nYou're surrounded by Marines! You're thrown in jail.\nBetter luck next time, rookie. 🚔💀")
 
         elif choice == "3":
-            print("You knock out the guard silently. Nice work! 💪✅")
+            print("You hit the gaurd but the guard has too much armour and you hurt your wrist.\nYou're surrounded by Marines! You're thrown in jail.\nBetter luck next time, rookie. 🚔💀")
 
         else:
             print("You freeze in place... The guard spots you! 🚨❌")
