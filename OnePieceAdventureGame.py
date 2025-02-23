@@ -59,9 +59,9 @@ if q1 == "y":
         print("The treasure is locked away inside, but guards are patrolling everywhere!")
 
         print("\nYou approach a hallway with a guard. What do you do?")
-        print("1️⃣ Hide behind a barrel 🛢️")
-        print("2️⃣ Sneak past quietly 🕶️")
-        print("3️⃣ Knock out the guard 🥊")
+        print(" 1️⃣  Hide behind a barrel 🛢️")
+        print(" 2️⃣  Sneak past quietly 🕶️")
+        print(" 3️⃣  Knock out the guard 🥊")
 
         choice = input("Choose an action (1/2/3): ")
 
@@ -96,4 +96,6 @@ elif q1 == "n":
 else:
     print("What?")
 
-print("Next Day☀️")
+print("\nNext Day☀️")
+print("Your up, good. We got a lot of training ahead of us.\n You head outside with Kaizo and start your day.")
+print("NEW DAY☀️")
