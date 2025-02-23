@@ -48,9 +48,6 @@ if q1 == "y":
                 print("\nYou collapse to the ground... You lost. 💀")
                 print("'Come back when you're stronger, kid.'")
                 break  # Exit loop
-
-
-                break  # End the loop since the player won
     
     # Stealing Path 🤑💰 
     if q2 == "2":
@@ -98,4 +95,5 @@ else:
 
 print("\nNext Day☀️")
 print("Your up, good. We got a lot of training ahead of us.\n You head outside with Kaizo and start your day.")
-print("NEW DAY☀️")
+print("Then as soon as you step outside, Kaizo puts a sword at your throat. He says'Never, EVER let your guard down.'")
+print("Then you ")
