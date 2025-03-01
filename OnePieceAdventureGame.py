@@ -94,6 +94,6 @@ else:
     print("What?")
 
 print("\nNext Day☀️")
-print("Your up, good. We got a lot of training ahead of us.\n You head outside with Kaizo and start your day.")
-print("Then as soon as you step outside, Kaizo puts a sword at your throat. He says'Never, EVER let your guard down.'")
-print("Then you ")
+print("Your up, good. We got a lot of training ahead of us.\nYou head outside with Kaizo and start your day.")
+print("Then as soon as you step outside, Kaizo puts a sword at your throat.\nNever, EVER let your guard down")
+print("You got lots of training to do kid.")
