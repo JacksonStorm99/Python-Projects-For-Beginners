@@ -110,9 +110,7 @@ print("They are getting closer.")
 print("You and Kaizo are trapped.")
 print("They`re getting closer.")
 print("\nWhat do you do?")
-input("Would you like to (1) Fight the Marines or (2) Sneak past them? (1/2) ")
-
-choice = input("Choose an action (1/2): ")
+choice = input("Would you like to (1) Fight the Marines or (2) Sneak past them? (1/2) ")
 
 if choice == "1":
     print("\nYou decide to fight the Marines! ⚔️")
