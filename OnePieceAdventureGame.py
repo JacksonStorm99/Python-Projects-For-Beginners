@@ -83,7 +83,7 @@ if q1 == "y":
     elif q2 == "n":
         quit()
     else:
-        print("You hesitated... Looks like you're not ready yet.")
+        print("Looks like you're not ready yet.")
 
 
 elif q1 == "n":
@@ -111,3 +111,47 @@ print("You and Kaizo are trapped.")
 print("They`re getting closer.")
 print("\nWhat do you do?")
 input("Would you like to (1) Fight the Marines or (2) Sneak past them? (1/2) ")
+
+choice = input("Choose an action (1/2): ")
+
+if choice == "1":
+    print("\nYou decide to fight the Marines! ⚔️")
+    player_hp = 20
+    marine_hp = 25
+
+    while player_hp > 0 and marine_hp > 0:
+        input("\nPress Enter to attack! ⚔️")
+        player_attack = random.randint(5, 12)
+        marine_hp -= player_attack
+        print(f"You strike and deal {player_attack} damage! 💥")
+
+        if marine_hp <= 0:
+            print("\nYou defeated the Marines! 🏆 You and Kaizo escape safely.")
+            break
+
+        marine_attack = random.randint(6, 14)
+        player_hp -= marine_attack
+        print(f"The Marines attack and hit you for {marine_attack} damage! 😨")
+
+        if player_hp <= 0:
+            print("\nYou collapse to the ground... You lost. 💀")
+            print("'Come back when you're stronger, kid.'")
+            break
+
+elif choice == "2":
+    print("\nYou decide to sneak past the Marines... 🕶️")
+    stealth_success = random.choice([True, False])
+
+    if stealth_success:
+        print("You successfully sneak past the Marines and escape safely! 🎉")
+    else:
+        print("You make a noise and the Marines spot you! 🚨❌")
+        print("\nYou're surrounded by Marines! You're thrown in jail. 🚔💀")
+        print("'Better luck next time, rookie.'")
+        quit()
+
+else:
+    print("Invalid choice. The Marines catch you! 🚨❌")
+    print("\nYou're surrounded by Marines! You're thrown in jail. 🚔💀")
+    print("'Better luck next time, rookie.'")
+    quit()
