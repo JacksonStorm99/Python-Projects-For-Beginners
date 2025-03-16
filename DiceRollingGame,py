@@ -5,7 +5,7 @@ while True:
     if choice == "y":
         die1 = random.randint(1, 6)
         die2 = random.randint(1, 6)
-        print(f"({die1}, {die2})")
+        print(f" Dice no.1 - {die1}, Dice no.2 - {die2}")
     elif choice == "n":
         print("Thanks for playing! ")
         break
